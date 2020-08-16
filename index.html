@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BaseBall Simulator</title>
+</head>
+<body>
+	<div id="players">
+		<p>ピッチャー：{{ p_name }}</p>
+		<p>バッター</p>
+		<table>
+			<tr>
+				<th>選手</th><th>打率</th>
+			</tr>
+			<tr>
+				<td>{{ b_name }}</td><td>{{ b_hit_ave }}</td>
+			</tr>
+		</table>
+	<p>{{ result }}</p>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
